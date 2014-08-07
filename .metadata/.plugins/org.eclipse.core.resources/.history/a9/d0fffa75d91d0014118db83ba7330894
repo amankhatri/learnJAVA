@@ -1,0 +1,8 @@
+
+public class Application {
+	public static void main(String[] args) {
+	
+		//string is a class and not a primitive datatype like int or char or double
+		String text = "Hello";
+	}
+}
