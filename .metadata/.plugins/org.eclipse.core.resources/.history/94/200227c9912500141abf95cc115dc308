@@ -1,0 +1,10 @@
+/*we can only have one public class in the entire code with main in it*/
+/*we can have as many public classes as we want*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

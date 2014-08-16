@@ -1,8 +1,0 @@
-public class Application {
-	public static void main(String[] args) {
-		//one way top declare boolean primitive datatype
-		boolean loop1 = true;
-		System.out.println("First way to declare boolean datatype :" + loop1);
-		// Another way to declare 
-	}
-}

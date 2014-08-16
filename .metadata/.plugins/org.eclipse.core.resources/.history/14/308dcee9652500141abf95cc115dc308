@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Application {
+
+	private static Scanner input;
+
+	public static void main(String[] args) {
+		input = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int value =0;
+		do
+		{
+			value = input.nextInt();
+		}
+		while(value!=5);
+		System.out.println("Got 5");
+	}
+		
+
+}
