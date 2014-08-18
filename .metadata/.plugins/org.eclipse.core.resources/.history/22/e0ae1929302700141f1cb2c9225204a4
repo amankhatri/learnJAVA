@@ -1,0 +1,25 @@
+class Frog {
+	String name;
+	int age;
+	public String getName(){
+		return name;
+	}
+	public int getAge(){
+		return age;
+	}
+}
+
+public class Applicaton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//now to set variables we would have to create an object for the class frog
+		// and we would have to know the names of the variables in the class like this:
+		Frog frog1 = new Frog();
+		frog1.name = "Frog1";
+		frog1.age = 10;
+		System.out.println("Frog1.name: "+frog1.name);
+		System.out.println("Frog1.age: "+frog1.age);
+	}
+
+}
