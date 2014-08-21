@@ -1,0 +1,29 @@
+class Thing {
+	public String name;
+	//Static variables only have one copy and it can only be accessed by the class
+	public static String description;
+	public showName(){
+		System.out.println("Name: " +name);
+	}
+	
+}
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Static variables can not be initialized using objects, they can only be
+		//called using the class name like this:	
+		Thing.description = "I am a thing";
+		System.out.println("Thing.description: "+Thing.description);
+		Thing thing1 = new Thing();
+		Thing thing2 = new Thing();
+		// where are public variables can be set using objects and each
+		//object gets a copy, These variables are instance variables, for
+		//example "name"
+		thing1.name = "Bob";
+		thing2.name = "Sue";
+		System.out.println("Thing1.name: " + thing1.name );
+		System.out.println("Thing2.name: "+ thing2.name);
+	}
+
+}
