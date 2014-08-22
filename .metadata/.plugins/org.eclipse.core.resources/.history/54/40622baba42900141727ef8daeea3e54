@@ -1,0 +1,33 @@
+class Frog1 {
+	
+}
+class Frog{
+	
+	/*public String  toString(){
+		return "hello";
+	}*/
+	public String str(){
+		return "end";
+	}
+}
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/*All objects in java in java have Object class as its parent*/
+		/*We will look into some standard objects in java*/
+		// object is the superclass or the parent of all the classes we make
+		Object obj = new Object();
+		//Here I have a class Frog , and when you do :
+		Frog1 frog = new Frog1();
+		//frog.method , the methods would be the same as you get from 
+		//obj.method
+		//now we will learn about tostring method which is very useful in debugging
+		Frog frog1 = new Frog();
+		// when we have toString method defined for a class the line below displays what
+		//ever is the return value of toString function of the class.
+		System.out.println(frog1);
+	   	
+	}
+
+}
