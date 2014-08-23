@@ -1,0 +1,12 @@
+
+public class Car extends Machine{
+	/*In this child class we can override the methods of parent class
+	 * for example we will override the method start from Machine class*/
+	public void start(){
+		System.out.println("Car Started.");
+	}
+	public void wipeWindShield(){
+		System.out.println("Wiping Wind Sheild");
+	}
+
+}

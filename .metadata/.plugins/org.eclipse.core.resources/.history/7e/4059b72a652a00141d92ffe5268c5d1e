@@ -1,0 +1,10 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Allocating memory for machine 1*/
+		Machine mach1 = new Machine();
+	}
+
+}

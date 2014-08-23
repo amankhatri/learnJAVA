@@ -1,0 +1,4 @@
+/*You can't have classes with same name in same package*/
+public class Application {
+/**/
+}

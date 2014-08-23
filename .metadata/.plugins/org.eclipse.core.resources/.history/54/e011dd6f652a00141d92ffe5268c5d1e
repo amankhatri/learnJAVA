@@ -1,0 +1,13 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Allocating memory for mach1 which is a machine*/
+		Machine mach1 = new Machine();
+		mach1.start();
+		mach1.stop();
+		Car car1 = new Car();
+	}
+
+}

@@ -1,0 +1,8 @@
+/*Import package import followed by packagename.classname*/
+import ocean.Fish;
+/*You can't have classes with same name in same package*/
+
+public class Application {
+/**/
+	Fish fish = new Fish();
+}
