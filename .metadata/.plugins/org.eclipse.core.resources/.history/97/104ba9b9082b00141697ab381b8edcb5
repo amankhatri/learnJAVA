@@ -1,0 +1,9 @@
+/*We cover Access level modifiers, Public protected and private */
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Plant plant = new Plant();
+	}
+
+}

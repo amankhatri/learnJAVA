@@ -1,0 +1,15 @@
+
+/*when you write implements info in just like this: */
+public class Machine implements Info {
+	private int id = 7;
+	public void start(){
+		System.out.println("Machine Started");
+	}
+/*You can overide the functions you have declared in interfaces*/
+	@Override
+	public void showInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("Machine Id: " +id);
+	}
+	
+}

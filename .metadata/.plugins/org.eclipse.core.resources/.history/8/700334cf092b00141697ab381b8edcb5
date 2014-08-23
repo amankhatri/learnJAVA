@@ -1,0 +1,7 @@
+
+public class Oak extends Plant {
+	public Oak(){
+		/*we can not do type = "plant" in this child class*/
+	}
+	
+}

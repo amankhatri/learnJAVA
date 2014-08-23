@@ -1,0 +1,6 @@
+/*now this is an interface containing showinfo methods, 
+ * interface methods don't contain codes*/
+public interface Info {
+	public void showInfo();
+
+}
