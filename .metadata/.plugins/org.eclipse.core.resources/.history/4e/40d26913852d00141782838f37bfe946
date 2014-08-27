@@ -1,0 +1,19 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Plant plant1 = new Plant();
+		Tree tree = new Tree();
+		/*If you have a child class and a parent class you can 
+		 * always use child class instead of Parent and this is 
+		 * called poly morphism*/
+		Plant plant2 = plant1; //here plant2 refers to the same thing as plant1 which is new Plant() obj
+		//because of poly morphism I can do this:
+		Plant plant3 = tree;
+		plant3.grow(); // this calling the grow from class Tree
+		/*So here in above line the plant3 refers to the object
+		 * tree so it calls the funtion grow from Tree*/
+	}
+
+}
