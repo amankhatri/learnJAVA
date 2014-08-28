@@ -1,0 +1,14 @@
+/*Casting in java*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int intValue = 888; // int is 32 bits 
+		short shortValue = 55; //shot is 16 bit value
+		byte byteValue = 255; //it is 8 bits
+		long longValue = 23355;
+		
+		
+	}
+
+}
