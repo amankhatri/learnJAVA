@@ -1,0 +1,26 @@
+/*Anonymous classes are way of extending or interfacing a class at one 
+ *time */
+class Machine{
+	public void start(){
+		System.out.println("Starting Machine");
+	}
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*The way the Anonymous Class works is , lets say
+		 * I want to over ride start method in Machine class.*/
+		Machine machine1 = new Machine(){
+			/*I can override methods here :) */
+			@Override 
+			public void start(){
+				System.out.println("Camera Started");
+			}
+		};
+		machine1.start();
+
+	}
+
+}

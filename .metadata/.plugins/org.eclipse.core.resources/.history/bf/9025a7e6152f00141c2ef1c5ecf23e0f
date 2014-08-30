@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+class Machine {
+
+	@Override
+	public String toString() {
+		return "I am a Machine";
+	}
+	
+}
+class Camera extends Machine {
+
+	@Override
+	public String toString() {
+		return "I am a Camera";
+	}
+	
+}
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> list = new ArrayList<>();
+		list.add("One");
+		list.add("Two");
+		showList(list);
+		ArrayList<Machine> machineList = new ArrayList<>();
+		machineList.add(new Machine());
+		machineList.add(new Machine());
+		machineList.add(new Camera());
+		
+	}
+	/*since we don't have an object for class Application we will make Static method*/
+	public static void showList(ArrayList<String> list){
+		for(String value: list)
+		{
+			System.out.println("Value: " +value);
+		}
+		
+	}
+
+}

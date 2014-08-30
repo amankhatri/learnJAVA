@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+
+class Machine {
+
+	@Override
+	public String toString() {
+		return "I am a Machine";
+	}
+	
+}
+class Camera extends Machine {
+
+	@Override
+	public String toString() {
+		return "I am a Camera";
+	}
+	
+}
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> list = new ArrayList<>();
+		list.add("One");
+		list.add("Two");
+		showList(list);
+		ArrayList<Machine> machineList = new ArrayList<>();
+		machineList.add(new Machine());
+		machineList.add(new Machine());
+		/*we cannot do this:machineList.add(new Camera()); since 
+		 * ArrayList<Machine> is not subclass of ArrayList<Camera> */
+		ArrayList<Camera> cameraList = new ArrayList<Camera>();		
+		cameraList.add(new Camera());
+		cameraList.add(new Camera());
+		
+		
+	}
+	/*since we don't have an object for class Application we will make Static method*/
+	public static void showList(ArrayList<String> list){
+		for(String value: list)
+		{
+			System.out.println("Value: " +value);
+		}
+	}
+
+	public static void showMachineList(ArrayList<Machine> machinelist) {
+		for (Object value : machinelist) {
+			System.out.println("Value: " + value);
+		}
+	}
+
+	public static void showCameraList(ArrayList<String> cameraList) {
+		for (Object value : cameraList) {
+			System.out.println("Value: " + value);
+		}
+
+	}
+	/*? means ArrayList of unknown type and ? is called wildcard
+	 * This means type arraylist of anytype to function, i.e camera or machine or strings*/
+	public static void showUnknownList(ArrayList<?> unknownList)
+	
+
+}
