@@ -1,9 +1,0 @@
-
-public class Plant {
-	/*public method or variable is acceable through the instance of this 
-	 * class in any of the other classes in the project*/
-	public String name;
-	public plant(){
-		
-	}
-}

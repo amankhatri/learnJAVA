@@ -1,0 +1,23 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+/*Exceptions*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file = new File("test.txt");
+		try {
+			FileReader fr = new FileReader(file);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace(); //top line of the error tells us what are we dealing with
+			/*And last line is useually the line number where error occurs.*/
+			System.out.println("File not Found");
+		}
+		
+		
+	}
+
+}

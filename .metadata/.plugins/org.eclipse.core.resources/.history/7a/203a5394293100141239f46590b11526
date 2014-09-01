@@ -1,0 +1,13 @@
+import java.io.IOException;
+import java.text.ParseException;
+
+
+public class Test {
+	public void run() throws IOException{
+		//throw new IOException();
+		/*now lets say we want to throw another exception we do this:
+		 * */
+		throw new ParseException("Error in Commant list.",2);
+	}
+	
+}

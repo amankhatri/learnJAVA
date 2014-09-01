@@ -1,0 +1,26 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String filename = "C:\\Users\\khatri home\\Desktop\\example.txt";
+		/*or*/
+		String filename2 = "C:/Users/khatri home/Desktop/example.txt";
+		File textFile = new File(filename);
+		/*Reading a file in java requires classes like Reader and Buffer and other 
+		 * classes. Sightly simple way to do it is to use Scanner Class*/
+		try {
+			Scanner in = new Scanner(textFile);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
