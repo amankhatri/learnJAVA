@@ -1,0 +1,28 @@
+
+/*Abstract refer1 */
+public abstract class Machine {
+	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	/*Refer 2 : Every machine is going to have a different 
+	 * sort of start because Camera would start when it turns on 
+	 * the Display, where as car would start when its engine start.
+	 * This is appropriate to have all child classes of Machine (Camera,
+	 * and car) implement it but not the class Machine. Now this is
+	 * similar to an interface and I got to implement it in child classes */
+	public abstract void start();
+	public abstract void doStuff();
+	public abstract void shutdown();
+	/*Now lets say ever machine has run method: */
+	public void run(){
+		/*Now here I can call start method */
+		start();
+	}
+	
+}

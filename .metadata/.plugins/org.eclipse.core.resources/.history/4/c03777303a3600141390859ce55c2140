@@ -1,0 +1,19 @@
+class Temp implements AutoCloseable{
+/*http://docs.oracle.com/javase/7/docs/api/java/lang/AutoCloseable.html*/
+/*Class temp is implementing methods from interface Autocloseable*/
+	@Override
+	public void close() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Closing");
+	}
+	
+}
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Temp temp1 = new Temp();
+		
+	}
+
+}
