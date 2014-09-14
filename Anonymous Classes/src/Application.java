@@ -29,8 +29,8 @@ public class Application {
 		};
 		machine1.start();
 		/*now if I do this Plant plant1 = new Plant() it will give me 
-		 * an error saying the object can't be instanciated because it 
-		 * is an interface and you can't instanciate interface. However you
+		 * an error saying the object can't be instantiated because it 
+		 * is an interface and you can't instantiate interface. However you
 		 * can do this*/
 		Plant plant1 = new Plant(){
 

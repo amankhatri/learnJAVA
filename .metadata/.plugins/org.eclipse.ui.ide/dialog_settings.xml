@@ -7,6 +7,8 @@
 		<item value="590" key="DIALOG_X_ORIGIN"/>
 		<item value="260" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
 	<section name="NewWizardAction">
 	</section>
 </section>
