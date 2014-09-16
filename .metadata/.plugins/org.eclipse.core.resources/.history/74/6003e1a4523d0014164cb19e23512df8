@@ -1,0 +1,5 @@
+
+public enum Animal {
+	/*Now i can type this: */
+	CAT,DOG, HORSE;
+}

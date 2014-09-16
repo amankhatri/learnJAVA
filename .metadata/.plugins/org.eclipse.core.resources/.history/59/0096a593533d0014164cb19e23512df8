@@ -1,0 +1,8 @@
+
+public enum Animal {
+	/*Now i can type this: */
+	CAT,DOG, HORSE //cat dog and horse are the object of the type
+	animal.
+	/*And now I can remove the constant from the top of
+	 * the main class look REF2*/
+}

@@ -1,6 +1,0 @@
-/*how is closeable used with a file*/
-public class app2 {
-	public static void main(String[] args){
-		
-	}
-}

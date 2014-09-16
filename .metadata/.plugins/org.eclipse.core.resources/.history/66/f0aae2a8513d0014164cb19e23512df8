@@ -1,0 +1,28 @@
+
+public class Application {
+	public static final int DOG = 0;
+	public static final int CAT = 1;
+	public static final int HORSE = 2;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*often in programming we have variables that can only 
+		 * take certain values that represents certain things. 
+		 * lets declare int animal which can take certain values
+		 * declared as DOG , CAT and Horse which are constant*/
+		
+		int animal = CAT; 
+		switch(animal){
+		case DOG:
+			System.out.println("DOG");
+			break;
+		case CAT:
+			System.out.println("CAT");
+			break;
+		case HORSE:
+			System.out.println("HORSE");
+			break;
+		}
+		
+	}
+
+}

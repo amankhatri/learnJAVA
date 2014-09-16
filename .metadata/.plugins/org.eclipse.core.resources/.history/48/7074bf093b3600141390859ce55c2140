@@ -1,9 +1,0 @@
-import java.io.File;
-
-/*how is closeable used with a file*/
-public class app2 {
-	public static void main(String[] args){
-		File file1 = new File("test.txt");
-		BufferedReader br = new BufferedReader(file);
-	}
-}

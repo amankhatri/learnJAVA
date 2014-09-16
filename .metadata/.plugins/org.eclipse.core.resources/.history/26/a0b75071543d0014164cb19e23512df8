@@ -1,0 +1,19 @@
+/*All enum inhert from java.enum*/
+public enum Animal {
+	/*Now i can type this: */
+	CAT("Fergus"),DOG("Fido"), HORSE; /*cat dog and horse are the object of the type
+	animal.*/
+	/*And now I can remove the constant from the top of
+	 * the main class look REF2*/
+	/*we can have Enum methods and constructors. Constuctors of Enum
+	 * shoud be private and it will have package level kind of 
+	 * validity.
+	 *  */
+	Animal(String name){
+		
+	}
+	
+	
+	
+	
+}

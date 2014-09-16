@@ -1,0 +1,36 @@
+/*All enum inhert from java.enum*/
+public enum Animal {
+	/*Now i can type this: */
+	/*CAT, DOG, HORSE*/
+	CAT("Fergus"),DOG("Fido"), HORSE("Henry"); /*cat dog and horse are the object of the type
+	animal.*/
+	/*And now I can remove the constant from the top of
+	 * the main class look REF2*/
+	/*we can have Enum methods and constructors. Constuctors of Enum
+	 * shoud be private and it will have package level kind of 
+	 * validity.
+	 *  */
+	private String name;
+	Animal(String name){
+		/*since constuctor has a name parameter we need  to name 
+		 * cats and dogs and hourses to have */
+		this.name = name;
+		
+	}
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	
+	
+}

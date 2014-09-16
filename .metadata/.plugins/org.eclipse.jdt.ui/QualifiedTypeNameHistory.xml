@@ -12,4 +12,6 @@
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="Robot.Brain"/>
+<fullyQualifiedTypeName name="Robot.Battery"/>
 </qualifiedTypeNameHistroy>
