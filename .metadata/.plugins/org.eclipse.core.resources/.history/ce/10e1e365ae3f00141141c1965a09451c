@@ -1,0 +1,15 @@
+/*first read the explaination in person.java class. This program
+ * reads the object from the file */
+/* reading and writing is both included in the program and
+ * we are using two manin methods, which makes it two seperate programs*/
+/*NOTE IN JAVA YOU CAN HAVE MORE THAN ONE MAIN METHODS BUT WHEN YOU RUN IT
+ * YOU HAVE TO PICK ONE OF THE SEVERAL CLASSES WITH MAIN METHOD*/
+public class ReadObjects {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Reading Objects ..");
+
+	}
+
+}

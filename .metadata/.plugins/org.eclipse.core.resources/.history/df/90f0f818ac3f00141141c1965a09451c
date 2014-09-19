@@ -1,0 +1,12 @@
+
+public class WriteObjects {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Writing Objects ..");
+		Person mike = new Person(543, "Mike");
+		Person sue = new Person(123, "Sue")
+		
+	}
+
+}

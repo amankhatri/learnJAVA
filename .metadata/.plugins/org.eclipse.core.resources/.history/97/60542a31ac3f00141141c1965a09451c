@@ -1,0 +1,12 @@
+/*first read the explaination in person.java class */
+/* reading and writing is both included in the program and
+ * we are using two manin methods, which makes it two seperate programs*/
+public class ReadObjects {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Reading Objects ..");
+
+	}
+
+}
