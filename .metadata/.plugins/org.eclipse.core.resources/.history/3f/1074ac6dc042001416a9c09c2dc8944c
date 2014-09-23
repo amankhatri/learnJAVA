@@ -1,0 +1,15 @@
+/*in java we have passing by value not by reference*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Application application = new Application();
+		int value = 7;
+		application.show(7);
+		
+	}
+	public void show(int value){
+		System.out.println("Value is " +value);
+	}
+
+}
