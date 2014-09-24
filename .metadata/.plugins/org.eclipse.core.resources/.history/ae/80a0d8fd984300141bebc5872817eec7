@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Default size is 10*/
+ArrayList<Integer> arrayList = new ArrayList<Integer>();
+
+	}
+
+}

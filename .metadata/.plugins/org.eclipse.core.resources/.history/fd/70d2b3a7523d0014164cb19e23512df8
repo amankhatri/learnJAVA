@@ -1,7 +1,0 @@
-
-public enum Animal {
-	/*Now i can type this: */
-	CAT,DOG, HORSE
-	/*And now I can remove the constant from the top of
-	 * the main class REF2*/
-}
