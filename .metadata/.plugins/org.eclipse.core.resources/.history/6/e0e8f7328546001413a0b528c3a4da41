@@ -1,0 +1,17 @@
+import java.util.HashMap;
+
+/*Most common type of map*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*maps store pairs. In a pair we have a value and a key. When we create the map 
+		 * we have to specify which kind of object we want to store in it.*/
+		/*For example here we are storing strings which are keyed by integers
+		 * */
+		HashMap<Integer, Strings> map = new HashMap();
+
+
+	}
+
+}
