@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+	/*Passing these list into function*/
+		/*Since Arraylist and LInked List implements the list interface
+		 * we can pass arraylist or linked list as a list to a function. 
+		 * Hence we won't have to worry about they type of list. */
+		doTimings("ArrayList", arrayList);
+		doTimings("LinkedList", linkedList);
+		/*Infact we can also do this : */
+		List<Integer> listArrayList = new ArrayList<Integer>();
+		List<Integer> listLinkedList = new LinkedList<Integer>();
+		/*All we care about is when we create an instance
+		 * for example ArrayList<Integer>*/
+		/*If you want to remove the item from the end use array list if
+		 * you have to remove the item from the beginning or the middle
+		 *  use the linked list*/
+	}
+	/*to pass list to the function we will pass List interface with 
+	 * Parameterized integer*/
+	private static void doTimings(String type, List<Integer> list){
+		for(int i=0;i<1E5;i++){
+			/*Adding elements to the list i.e populating the list 
+			 * the list*/
+			list.add(1);
+		}
+		/*Now I want to calculate the time it takes to execute the commands*/
+		/*Add item to the end of the list*/
+		long start = System.currentTimeMillis();
+		for(int i=0; i<1E5;i++)
+		{
+			list.add(1);
+		}
+		
+		System.out.println("Time taken: " + (end-start) + "ms for type: " +type);
+		long start1 = System.currentTimeMillis();
+		long end1 = System.currentTimeMillis();
+		System.out.println("Time taken: " + (end1-start1) + "ms for type: " +type);
+	}
+
+}

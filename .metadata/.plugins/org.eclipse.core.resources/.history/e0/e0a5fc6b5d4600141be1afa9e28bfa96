@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+	}
+
+}

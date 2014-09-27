@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+	/*Passing these list into function*/
+		/*Since Arraylist and LInked List implements the list interface
+		 * we can pass arraylist or linked list as a list to a function.*/
+		doTimings("ArrayList", arrayList);
+		doTimings("LinkedList", linkedList);
+		
+	
+	}
+	/*to pass list to the function we will pass List interface with 
+	 * Parameterized integer*/
+	private static void doTimings(String type, List<Integer> list){
+		
+	}
+
+}
