@@ -1,0 +1,31 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
+
+/*Sorted Map, the sort interface in java*/
+/*REMEMBER : ALL THE COLLECTIONS, THAT IS ONLY COLLECTION CLASSES, ARE ORGANIZED 
+ * THOUGH INTERFACES. MAIN THREE COLLECTION CLASSES ARE: Lists, Map and Set interface*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Hash Map doesn't keep our keys in any type of order, and if we want to
+		 * keey keys in order we have two choices use 1) Linked Hash Map and 2) Tree Map*/
+		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+		/*Linked hash map is basically same as hash map except the fact that it has double
+		 * linked list connecting the hash maps. That means your keys and values stay
+		 * in the same order as you add them to the map.*/
+		LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
+		/*Tree is basic structures in computing and tree sorts the value that you add to it
+		 * usually in natural order ( natural orders for int is 1 2 3 4 5 ..) , we will
+		 * study more in future. */
+		TreeMap<Integer, String> treeMap = new TreeMap<Integer, String>();
+		
+	}
+	
+	public static void testMap(){
+		
+		
+	}
+
+}

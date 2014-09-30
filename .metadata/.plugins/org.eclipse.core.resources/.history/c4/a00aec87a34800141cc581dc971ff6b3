@@ -1,0 +1,20 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+/*Sorted Map, the sort interface in java*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Hash Map doesn't keep our keys in any type of order, and if we want to
+		 * keey keys in order we have two choices use 1) Linked Hash Map and 2) Tree Map*/
+		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+		/*Linked hash map is basically same as hash map except the fact that it has double
+		 * linked list connecting the hash maps. That means your keys and values stay
+		 * in the same order as you add them to the map.*/
+		LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
+		TreeMap<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
+		
+	}
+
+}
