@@ -1,0 +1,20 @@
+import java.util.HashSet;
+import java.util.Set;
+
+/*Set is kind of collection which stores only unique elements. We can also have a set of
+ * custom objects or as keys in a map. we will learn basic operations on sets like
+ * intersection and iterating through a set. */
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> stringSet = new HashSet<String>();
+		stringSet.add("Dog");
+		stringSet.add("Cat");
+		stringSet.add("Mouse");
+		stringSet.add("Snake");
+		stringSet.add("Bear");
+		System.out.println(stringSet);
+	}
+
+}
