@@ -1,0 +1,71 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Map;
+/*Keys in a map are unique unlike values. Values don't have to be unique at all*/
+import java.util.Set;
+class Person{
+	private int id;
+	private String name;
+	public Person(int id, String name) {
+	
+		this.id = id;
+		this.name = name;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + "]";
+	}
+
+	
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person person = new Person(0,"Bob");
+		Person person = new Person(0,"Bob");
+		Person person = new Person(0,"Bob");
+		Person person = new Person(0,"Bob");
+		
+		System.out.println("HashMap");
+		Map<String, Integer> hashMap = new HashMap<String,Integer>();
+		hashMap.put("One", 1);
+		hashMap.put("Two", 2);
+		hashMap.put("Three",3);
+		hashMap.put("Four",4);
+		hashMap.put("Five", 5);
+		hashMap.put("One", 4);
+		/*Iterating through a set using for each loop*/
+		for(String key: hashMap.keySet()){
+			System.out.println("Key: "+ key +"Value: "+ hashMap.get(key));
+		}
+		System.out.println("-----------------------------------------------------------\n");
+		System.out.println("LinkedHashMap");
+		Map<String, Integer> linkedHashMap = new LinkedHashMap<String,Integer>();
+		linkedHashMap.put("One", 1);
+		linkedHashMap.put("Two", 2);
+		linkedHashMap.put("Three",3);
+		linkedHashMap.put("Four",4);
+		linkedHashMap.put("Five", 5);
+		linkedHashMap.put("One", 4);
+		/*Iterating through a set using for each loop*/
+		for(String key: linkedHashMap.keySet()){
+			System.out.println("Key: "+ key +"Value: "+ linkedHashMap.get(key));
+		}
+		System.out.println("-----------------------------------------------------------\n");
+		System.out.println("LinkedSet");
+		/*Sets are like map but they don't have values for each element. And they store
+		 * unique keys only */
+		Set<String> linkedHashSet = new LinkedHashSet<String>();
+		linkedHashSet.add("Dog");
+		linkedHashSet.add("Cat");
+		linkedHashSet.add("Mouse");
+		linkedHashSet.add("Cat");
+	}
+
+}
