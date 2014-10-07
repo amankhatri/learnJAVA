@@ -1,0 +1,12 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Queue is a row, Queue is a row of people Queue can be row of
+		 * ooooooooooooo s. Peoplep enter at the end of the queue and 
+		 * leave from the front of the queue.  */
+
+	}
+
+}
