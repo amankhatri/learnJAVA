@@ -1,0 +1,23 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+
+/*This class can store a list of url*/
+public class Urlibrary implements Iterable<String>{
+	private LinkedList<String> urls = new LinkedList<String>();
+	public Urlibrary(){
+		urls.add("https://www.caveofprogramming.com/");
+		urls.add("https://www.facebook.com/caveofprogramming/");
+		urls.add("https://www.bbc.uk/");
+	}
+	@Override
+	public Iterator<String> iterator() {
+		/* Iterator is the sole method in Iterable which needs to be implemented
+		 * and since  Urlibrary implements Iterable<String> this method would have
+		 * to point to each of the string urls. I have return an interator object
+		 * from this method. Iterator object is something that has method 
+		 * hasNext() next and remove. It is capable of pointing to the objects
+		 * over which you want to iterate*/
+		return null;
+	}
+	
+}

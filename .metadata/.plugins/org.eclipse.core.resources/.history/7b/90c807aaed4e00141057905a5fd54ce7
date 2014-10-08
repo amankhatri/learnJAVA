@@ -1,0 +1,11 @@
+import java.util.LinkedList;
+
+/*This class can store a list of url*/
+public class Urlibrary {
+	private LinkedList<String> urls = new LinkedList<String>();
+	public Urlibrary(){
+		urls.add("https://http://www.caveofprogramming.com/")
+	}
+	
+	
+}
