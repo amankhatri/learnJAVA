@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*ConsiderL
+		 * 1. What you need the collection to do
+		 * 2. are you using the fastest collection for your purposes
+		 * (think about insertion/deletion, retrieval and traversal
+		 * */
+		//////////////////////Lists//////////////////////////////
+//		store lists of objects
+//		duplicates are allowed
+//		objects remain in order
+//		elements are indexed via an integer 
+//		cf. shopping list
+//		checking for perticular item in list is slow
+//		looking an item up by index is fast
+//		iterating though lists is relatevely fast
+//		note: you can sort lists if you want to.
+//		
+//		if you only add or remove items at end of list, use ArrayList.
+		List<String> list1 = new ArrayList<String>();
+		
+//		removing or adding items elsewhere in the list use LinkedList
+		List<String> list2 = new LinkedList<String>();
+	}
+
+}

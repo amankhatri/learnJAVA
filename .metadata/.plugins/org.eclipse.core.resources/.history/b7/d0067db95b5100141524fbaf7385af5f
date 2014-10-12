@@ -1,0 +1,14 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*ConsiderL
+		 * 1. What you need the collection to do
+		 * 2. are you using the fastest collection for your purposes
+		 * (think about insertion/deletion, retrieval and traversal
+		 * */
+	}
+
+}
