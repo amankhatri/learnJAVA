@@ -1,0 +1,21 @@
+/*Complex data types using collections*/
+public class Application {
+	/*if you know what kind of data you are going to get then you should have classes defined for 
+	 * can use array list or any other list to store data. However when you are not aware of
+	 * the data you are going to get as in this senarieo*/
+	/*we are given sample data and we have to store them*/
+	public static String[] vehicles = {
+		"ambulance","helicopter","lifeboat"
+	};
+	public static String[][] drivers = {
+		{"Fred","Sue","Pete"},{"Sue", "Richard","Bob","Fred"},
+		{"Pete","Hary","Bob"}
+	};
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

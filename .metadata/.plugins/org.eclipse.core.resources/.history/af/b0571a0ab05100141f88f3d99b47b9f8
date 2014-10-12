@@ -1,0 +1,14 @@
+/*Complex data types using collections*/
+public class Application {
+	public static String[] vehicles = {
+		"ambulance","helicopter","lifeboat"
+	};
+	public static String[][] drivers = {
+		
+	};
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
