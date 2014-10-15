@@ -1,0 +1,57 @@
+
+public class Application {
+	private int count = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Application app = new Application();
+		app.doWork();
+
+	}
+
+	public void doWork() {
+		Thread t1 = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				for (int i = 0; i < 10000; i++) {
+					count++;
+				}
+
+			}
+
+		});
+		Thread t2 = new Thread(new Runnable(){
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				for (int i = 0; i < 10000; i++) {
+					count++;
+				}
+
+			}
+			
+		});
+		/*t1.start();
+		t2.start();
+		System.out.println("Count is " +count);
+		Now if I just type that it will give count = 0; because t1.start() and t2.start() starts their executing the code by the time 
+		it reaches System.out.println("Count is " +count); so we would have to wait for these threads to complete processing and then print. To do that
+		we use a method called t1.join and t2.join. Which will wait for thread t1 to finish and then t2 to finish. However both threads are not schronized
+		and both thread reads whatever value of count does other thread stores in the variable, forexample if t1 store 100 in count t2 reads that, and vice
+		versa*/
+		t1.start();
+		t2.start();
+		try {
+			t1.join();
+			t2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Count is " +count);
+	}
+
+}
