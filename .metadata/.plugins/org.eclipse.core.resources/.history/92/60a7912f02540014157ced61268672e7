@@ -1,0 +1,23 @@
+/* Two Problems which we might encounter with multiple thread
+ * 1) Data being cached
+ * 2) Threads in deleting
+ *we learn about volatile key word */
+
+class Processor extends Thread{
+	@Override
+	public void run(){
+		while(true){
+			System.out.println("Hello");
+			Thread.sleep(200);
+		}
+	}
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
