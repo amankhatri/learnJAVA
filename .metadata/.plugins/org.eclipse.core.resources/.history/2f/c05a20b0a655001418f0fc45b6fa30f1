@@ -1,0 +1,14 @@
+import java.util.concurrent.SynchronousQueue;
+
+
+public class Processor {
+	public void produce() throws InterruptedException{
+		Synchronous(this){
+			System.out.println("Producer Thread Running...");
+		}
+	}
+	public void consumer() throws InterruptedException{
+		Thread.sleep(2000);
+	}
+
+}

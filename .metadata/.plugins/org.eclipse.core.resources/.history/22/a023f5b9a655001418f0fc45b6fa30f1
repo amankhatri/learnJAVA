@@ -1,0 +1,13 @@
+
+
+public class Processor {
+	public void produce() throws InterruptedException{
+		synchronized(this){
+			System.out.println("Producer Thread Running...");
+		}
+	}
+	public void consumer() throws InterruptedException{
+		Thread.sleep(2000);
+	}
+
+}
