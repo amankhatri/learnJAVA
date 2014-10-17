@@ -1,0 +1,23 @@
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Processor {
+	private final int LIMIT = 10;
+	private LinkedList<Integer> list = new LinkedList<Integer>(); 
+	public void producer() throws InterruptedException{
+		int valueAdded= 0;
+		while(true){
+			list.add(valueAdded);
+			
+		}
+		
+	}
+	public void consumer() throws InterruptedException{
+		while(true){
+			/*Since i want FIFO I would have to removefrom first*/
+			System.out.println("List size is " +list.size());
+			int valueRemoved = list.removeFirst(); //removeFirst is only in last Linked list and not in the list inteface.
+		}
+	}
+}

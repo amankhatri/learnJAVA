@@ -1,0 +1,9 @@
+
+public class Processor {
+	public void producer() throws InterruptedException{
+		
+	}
+	public void consumer() throws InterruptedException{
+		
+	}
+}

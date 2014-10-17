@@ -1,0 +1,10 @@
+
+public class Processor {
+	private List<Integer> list = new LinkedList<Integer>(); 
+	public void producer() throws InterruptedException{
+		
+	}
+	public void consumer() throws InterruptedException{
+		
+	}
+}
