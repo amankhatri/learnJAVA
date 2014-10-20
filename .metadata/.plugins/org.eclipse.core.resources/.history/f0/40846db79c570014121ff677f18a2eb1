@@ -1,0 +1,17 @@
+
+public class Runner {
+	private int count;
+	private void increment(){
+		
+	}
+	public void firstThread() throws InterruptedException {
+		
+		
+	}
+	public void secondThread()throws InterruptedException{
+		
+	}
+	public void finished(){
+		
+	}
+}
