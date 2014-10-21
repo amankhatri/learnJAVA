@@ -1,0 +1,16 @@
+
+public class Runner {
+	private Account acc1 = new Account();
+	private Account acc2 = new Account();
+	
+	public void firstThread() throws InterruptedException{
+		
+	}
+	public void secondThread() throws InterruptedException{
+		
+	}
+	public void finished(){
+		
+	}
+
+}

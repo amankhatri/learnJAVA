@@ -1,0 +1,9 @@
+
+public class Account {
+	private int balance = 10000;
+	
+	public void deposit(int amount){
+		
+	}
+
+}

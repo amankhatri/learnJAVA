@@ -1,0 +1,26 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runner runner = new Runner();
+		Thread t1 = new Thread(new Runnable(){
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				try {
+					runner.firstThread();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+		
+		Thread t2  = new Thread(new Runnable(){
+			
+		});
+	}
+
+}

@@ -1,0 +1,71 @@
+import java.util.Random;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+
+public class Runner {
+	private Account acc1 = new Account();
+	private Account acc2 = new Account();
+	private Lock lock1 = new ReentrantLock();
+	private Lock lock2 = new ReentrantLock();
+	private void acquireLocks(Lock firstLock, Lock secondLock){
+		while(true){
+			//Acquire lock
+			boolean gotFirstLock = false;
+			boolean gotSecondLock = false;
+			try{
+				gotFirstLock = firstLock.tryLock();
+				gotSecondLock = secondLock.tryLock();
+			}
+			
+			
+		}
+		/*think about time*/
+	}
+	public void firstThread() throws InterruptedException{
+		Random random = new Random();
+		for(int i = 0;i<10000;i++){
+			/*Dead lock can occur if you lock locks in different orders in different methods like for excample here we 
+			 * have 	lock1.lock() , lock2.lock(); where as in second thread we have lock2.lock() and lock1.lock(). This situation creates a deadlock
+			 * because firstThread Already has lock on lock1 but simultaneously secondThread has obtained lock on lock2 and as a result, firstthread can not
+			 * obtain/acquire lock2 and second thread can't acquire lock 1. Two solutions: 1) lock your locks on right order or same order in all methods
+			 * or i can have a method which acquire locks so it does everthing for you.  */
+			//lock1.lock();
+			//lock2.lock();
+			acquireLocks(lock1, lock2);
+			try{
+				Account.transfer(acc1, acc2, random.nextInt(100));
+			}catch (Exception e){
+				System.out.println("Error in First Thread");
+			}
+			finally{
+				lock1.unlock();
+				lock2.unlock();
+			}
+		}
+	}
+	public void secondThread() throws InterruptedException{
+		Random random = new Random();
+		for(int i = 0;i<10000;i++){
+			//lock2.lock();
+			//lock1.lock();
+			acquireLocks(lock1, lock2);
+			try{
+				Account.transfer(acc2, acc1, random.nextInt(100));
+			}catch (Exception e){
+				System.out.println("Error in First Thread");
+			}
+			finally{
+				lock1.unlock();
+				lock2.unlock();
+			}
+		}
+	}
+	public void finished(){
+		System.out.println("Account 1 Balance: "+acc1.getBalance());
+		System.out.println("Account 2 Balance: "+acc2.getBalance());
+		System.out.println("Total Balance: "+(acc1.getBalance()+acc2.getBalance()));
+	
+	}
+
+}
