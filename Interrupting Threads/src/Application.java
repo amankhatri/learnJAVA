@@ -1,0 +1,35 @@
+import java.util.Random;
+
+/*volatile and boolean method are the best way to interrupt work*/
+public class Application {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.out.println("Starting ...");
+		Thread t1 = new Thread(new Runnable(){
+			Random random  = new Random();
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				for(int i = 0;i<1E6; i++){
+					/*here i will check if thread has been inturrpted*/
+					if(Thread.currentThread().isInterrupted()){
+						System.out.println("Inteerrupted...");
+						break;
+					}
+					Math.sin(random.nextDouble());
+				}
+			}
+			
+		});
+		
+		t1.start();
+		Thread.sleep(500);
+		t1.interrupt();/*thread interrupt sets a flag but doesn't really do anything. if we want to know if that has been intrupped we have to ask it in
+		the run method of the thread.*/
+		t1.join();
+		System.out.println("Finished...");
+		
+	}
+
+}

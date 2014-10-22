@@ -1,0 +1,16 @@
+/*volatile and boolean method are the best way to interrupt work*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Starting ...");
+		Thread t1 = new Thread(new Runnable(){
+			
+		});
+		
+		t1.start();
+		t1.join();
+		
+	}
+
+}
