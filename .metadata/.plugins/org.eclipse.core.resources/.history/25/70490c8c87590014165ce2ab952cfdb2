@@ -1,0 +1,14 @@
+import java.util.concurrent.Semaphore;
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Semaphore is an object that maintains count like: Semaphore sem = new Semaphore(count). we refer to counts as the available permit and we 
+		 * can get those using */
+		Semaphore sem = new Semaphore(1);
+		System.out.println("Available Permits: "+sem.availablePermits());
+	}
+
+}

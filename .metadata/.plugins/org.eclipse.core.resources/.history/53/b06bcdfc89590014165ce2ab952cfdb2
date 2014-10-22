@@ -1,0 +1,52 @@
+import java.util.concurrent.Semaphore;
+
+/*Making this a singleton class that means the constructor will be private*/
+public class Connection {
+	private static Connection instance = new Connection();
+	private Semaphore sem = new Semaphore(10); // to limit the number of connections
+	private int connections = 0;
+	private Connection(){
+		
+	}
+	
+	public void connect(){
+		try {
+			sem.acquire();
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try{
+			
+		}finally{
+			
+		}
+		
+	}
+	public static Connection getInstance(){
+		return instance;
+	}
+	public void doconnect(){
+//		try {
+//			sem.acquire();
+//		} catch (InterruptedException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+		synchronized(this){
+			connections++;
+			System.out.println("Current Connections: " +connections );
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		synchronized(this){
+			connections--;
+		}
+		sem.release();
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.util.concurrent.Executors;
+import java.util.concurrent.Semaphore;
+
+
+public class Application {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		/*Semaphore is an object that maintains count like: Semaphore sem = new Semaphore(count). we refer to counts as the available permit and we 
+		 * can get those using sem.availablePermits()*/
+		//Semaphore sem = new Semaphore(0);
+		//System.out.println("Available Permits: "+sem.availablePermits());
+		/*semaphore count starts from zero . so we can release permits and acquire permits*/
+		//sem.release();
+		//System.out.println("Available Permits: "+sem.availablePermits());
+		/*sem.acquire() will wait on permits to be available then acquire them*/
+		//sem.acquire(); //acquire and release are like locking and unlocking.
+		//sem.release(); /*in a lock we have to unlock from same thread but in semaphores we can release it from any from withing a program*/
+		Connection.getInstance().connect();
+		ExecutorService executor = Executors.newCachedThreadPool()
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+/*Making this a singleton class that means the constructor will be private*/
+public class Connection {
+	private static Connection instance = new Connection();
+	private int connections = 0;
+	private Connection(){
+		
+	}
+	public static Connection getInstance(){
+		return instance;
+	}
+	public void connect(){
+		synchronized(this){
+			connections++;
+			System.out.println("Current Connections: " +connections );
+		}
+		
+	}
+
+}
