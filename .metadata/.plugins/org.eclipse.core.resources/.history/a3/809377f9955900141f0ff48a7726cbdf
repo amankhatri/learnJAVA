@@ -1,0 +1,13 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/*Allow threads to return values and to thow exceptions*/
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExecutorService executor = new Executors.newCachedThreadPool();
+		
+	}
+
+}
